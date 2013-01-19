@@ -1,4 +1,4 @@
 ditty
 =====
 
-main ditty repo
+ditty project v0.1
