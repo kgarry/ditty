@@ -1,0 +1,21 @@
+/**
+* #Desc declare weak globals
+**/
+
+
+/**
+* @Desc loader/controller
+* @Param  parts     An array of content chunks to grab
+* @Param  parentID  An HTML DOM id to place returned payload into
+* @Todo   Protect against recursion, Error handling
+**/
+function paintWires(parts, parentId) {
+  for (i=0; part=parts[i]; i++) {
+    var target = "./parts/" + part + ".php";
+    var clnPart = part.replace(".", "_");
+
+    $("#" + parentId).append("<div class='" + clnPart + "' id='" + clnPart + "'></div>");
+    $("#" + clnPart).load("./parts/" + part);
+
+  } // end - for parts
+} // end - func paintWires
