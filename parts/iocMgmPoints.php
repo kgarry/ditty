@@ -1,10 +1,9 @@
 <?php
 
 require_once("../lib/iocurve/iocurve.class.php");
-require_once("../lib/iocurve/IocMgmtView.class.php");
-#require_once("../lib/iocurve/IocMgmtController.class.php");
+require_once("../lib/iocurve/mgmtView.class.php");
+#require_once("../lib/iocurve/mgmtController.class.php");
 
-$ui = new IocMgmtView();
+$ui = new MgmtView();
 $ui->setType("points");
-echo $ui->drawIocMgmtView();
-
+echo $ui->drawMgmtView();

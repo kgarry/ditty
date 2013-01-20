@@ -97,9 +97,9 @@
 
       <hr>
 
-    <div id="footer" style="background-color: black">
+    <div id="footer" style="background-color: black; position: fixed; bottom: 0; height: 54px; width: 100%">
       <div class="container">
-        <p class="muted credit" style="text-align: center; vertical-align: bottom; padding-top: 10px">
+        <p class="muted credit" style="text-align: center; vertical-align: bottom; padding-top: 8px">
 		<img src="bootstrap/img/logo.png" style="height: 24px"><br>&copy; IOCurve 2012
 	</p>
       </div>
